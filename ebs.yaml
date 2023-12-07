@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Creates an EBS volume of 1GB gp3 in us-east-1a
+
+Resources:
+  EBSVolume:
+    Type: AWS::EC2::Volume
+    Properties:
+      AvailabilityZone: us-east-1a
+      Size: 1
+      VolumeType: gp3
